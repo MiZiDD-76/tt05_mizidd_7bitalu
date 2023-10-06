@@ -34,7 +34,7 @@ wire opcode[2:0];
 assign opcode=uio_in[2:0];
 
 always @(posedge clk ) begin
-    if rst_n == 0 begin
+    if (rst_n == 0) begin
         accu<=0;
         carry<=0;        
     end else begin
