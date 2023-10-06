@@ -25,7 +25,7 @@ module tt_um_mizidd_7bitalu (
 //       
 
 wire [6:0] operand ;
-assign operand = ui_in[6:0]
+assign operand = ui_in[6:0];
 reg [6:0] accu ;
 reg carry;
 assign uo_out[6:0] = accu;
